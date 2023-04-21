@@ -5,6 +5,11 @@
   "main": "build/index.js",
   "types": "build/types/index.d.ts",
   "type": "module",
+  "homepage": "https://jokay03j.github.io/utils/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jokay03J/utils.git"
+  },
   "scripts": {
     "test": "jest",
     "build": "tsc",
