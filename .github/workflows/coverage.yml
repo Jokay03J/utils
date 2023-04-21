@@ -1,0 +1,12 @@
+name: upload code coverage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload:
+    name: upload to codevoc
+    runs-on: ubuntu-18.04
+    uses: codecov/codecov-action@v3
