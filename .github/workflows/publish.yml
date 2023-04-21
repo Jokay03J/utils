@@ -3,8 +3,13 @@ name: publish to npm
 on:
   release:
     types: [released]
+
 permissions:
   contents: write
+
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  NODE_VERSION: 16
 
 jobs:
   test:
@@ -40,8 +45,10 @@ jobs:
   deploy:
     needs: [test, docs]
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 16
