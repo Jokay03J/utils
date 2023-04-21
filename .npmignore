@@ -1,1 +1,8 @@
 src
+test
+jest.config.ts
+.eslintrc.json
+tsconfig.json
+.github
+docs
+node_modules
